@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+# Bundle edge Rails instead: gem 'rails', '>= 7.1.0', github: 'rails/rails'
 ruby '2.3.1'
 gem 'rails'
 # Use postgresql as the database for Active Record
@@ -10,14 +10,14 @@ gem 'pg', '~> 0.18'
 gem 'puma'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.2.2'
 
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.2.0'
 gem 'turbolinks', '~> 5.x'
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.6', '>= 2.6.4'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 3.0'
 
@@ -35,10 +35,10 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console', '~> 3.0'
-  gem 'listen', '~> 3.0.5'
+  gem 'web-console', '~> 3.2', '>= 3.2.0'
+  gem 'listen', '~> 3.0.7'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen', '~> 2.0.1'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
